@@ -2,11 +2,13 @@
 
 # What could be an issue here?
 event_capacity <- c(60, 50, '100', 100)
+# Putting 100 in quotations makes it a string data type, and vectors can only hold one data type
 
 # Fix the possible error in a new variable event_capacity_new
+event_capacity_new <- c(60, 50, 100, 100)
 
 # Create a vector of event names for each event 
-event_names <- 
+event_names <- c("Opera", "Baseball Game", "Movie", "Park")
   
 # Fix the error in creating this dataframe
 events <- data.frame(event_names, event_cost, event_capacity)
